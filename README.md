@@ -3,6 +3,9 @@
 You must use the factory classes in py-fundamentals to use this
 package.
 
+You can check the py-fundamentals repo for more data regarding factory setup
+and all how all that works.
+
 Streamlit must be in use already (since data is displayed using st.bar_chart() directly)
 
 ## Usage
