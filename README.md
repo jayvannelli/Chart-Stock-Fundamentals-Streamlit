@@ -43,5 +43,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
+
+See the images folder for what the above charts looked like on streamlit.
