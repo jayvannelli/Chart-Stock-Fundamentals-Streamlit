@@ -29,7 +29,7 @@ class StreamlitFundamentals(ABC):
         ...
 
     @abstractmethod
-    def chart_single_value(self, values: list[str]):
+    def chart_single_value(self, value: str):
         ...
 
     @abstractmethod
