@@ -6,7 +6,7 @@ from fundamentals.containers import CashFlowsContainer
 
 
 class StreamlitCashFlows(StreamlitFundamentals):
-    """Plot IncomeStatementsContainer objects using streamlit."""
+    """Plot CashFlowsContainer objects using streamlit."""
 
     def __init__(self, data: CashFlowsContainer) -> None:
         """Initialize Streamlit component to plot fundamentals Cash Flows.
