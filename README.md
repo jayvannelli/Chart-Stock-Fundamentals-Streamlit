@@ -42,7 +42,7 @@ def main():
     # Use charting methods to display data using st.bar_chart().
     income_statement_component.chart_single_value(value=inc_stmt_valid_values[1])
     
-    # You could also pass strings of what value(s) you'd like to chart. 
+    # You could also pass a string/list of strings with value(s) to chart. 
     balance_sheet_component.chart_multiple_values(values=[
         "cashAndShortTermInvestments", "inventory", "netReceivables"
     ])
