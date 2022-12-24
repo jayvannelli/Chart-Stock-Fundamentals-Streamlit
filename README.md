@@ -41,7 +41,12 @@ def main():
 
     # Use charting methods to display data using st.bar_chart().
     income_statement_component.chart_single_value(value=inc_stmt_valid_values[1])
-    balance_sheet_component.chart_multiple_values(values=bal_sheet_valid_values[2:5])
+    
+    # You could also pass strings of what value(s) you'd like to chart. 
+    balance_sheet_component.chart_multiple_values(values=[
+        "cashAndShortTermInvestments", "inventory", "netReceivables"
+    ])
+    
     cash_flow_component.chart_single_value(value=cash_flow_valid_values[-1])
 
 if __name__ == "__main__":
