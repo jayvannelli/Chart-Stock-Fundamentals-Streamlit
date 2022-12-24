@@ -9,11 +9,11 @@ class StreamlitCashFlows(StreamlitFundamentals):
     """Plot IncomeStatementsContainer objects using streamlit."""
 
     def __init__(self, data: CashFlowsContainer) -> None:
-        """Initialize Streamlit component to plot fundamentals Income Statements.
+        """Initialize Streamlit component to plot fundamentals Cash Flows.
 
         Parameter
         ---------
-        data : IncomeStatementsContainer
+        data : CashFlowsContainer
             FundamentalsFactory or StockFundamentalsFactory response from fundamentals.
         """
         if not isinstance(data, CashFlowsContainer):
@@ -34,7 +34,7 @@ class StreamlitCashFlows(StreamlitFundamentals):
         return self.data.limit
 
     def get_data(self):
-        """Returns list of IncomeStatement objects."""
+        """Returns list of CashFlow objects."""
         return self.data.cash_flows
 
     def valid_values(self):
@@ -44,12 +44,12 @@ class StreamlitCashFlows(StreamlitFundamentals):
         return VALID_CASH_FLOW_VALUES
 
     def chart_single_value(self, value: str):
-        """Plots one value in Income Statement over time.
+        """Plots one value in Cash Flows over time.
 
         Parameter
         ---------
         value : str
-            Income statement value to plot.
+            Cash flow value to plot.
         """
         if value not in self.valid_values():
             raise ValueError(
@@ -80,7 +80,7 @@ class StreamlitCashFlows(StreamlitFundamentals):
         Parameter
         ---------
         values : list[str]
-            Income statement values to plot (maximum = 5).
+            Cash flow values to plot (maximum = 5).
         """
         _values_data = {}
 
